@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vuetify Parallax Starter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  
+ <div id="app">
+   <v-app dark>
+    <!-- From Justins -->
+            <v-toolbar class="primary secondary--text" >
+          <v-toolbar-title >
+            <div > 
+              <v-btn style="font-size: 1.5em; font-weight: 600;" color="#212121" class="secondary primary--text">
+                diracdelta.me
+              </v-btn>
+            </div>
+          </v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-toolbar-items >
+            <v-btn flat class="primary secondary--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#projects'">Projects</v-btn>
+            <v-btn flat class="primary secondary--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#about'">About</v-btn>
+            <v-btn flat class="primary secondary--text" style="font-size: 1.5em; font-weight: 600;">DankeBin</v-btn>
+            <v-btn flat class="primary secondary--text" style="font-size: 1.5em; font-weight: 600;" v-scroll-to="'#contact'">Contact</v-btn>
+          </v-toolbar-items>
+
+
+        </v-toolbar>
+  <!-- ND OF JUSTINS -->
+
+    <v-toolbar class="white">
+      <v-toolbar-title v-text="title"></v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <section>
+         <v-layout>
+      <v-flex xs0 offset-xs0>
+        <v-card width = "100%">
+          <v-img
+            class="white--text"
+            height="100%"
+            src="pics/background.jpg"
+          >
+          <v-layout
+            column
+            align-center
+            justify-center
+            fill-height
+            class="white--text"
+          >
+            <img src="pics/ring2.png" alt="Vuetify.js" height="200">
+          </v-layout>
+          </v-img>
+        </v-card>
+      </v-flex>
+    </v-layout>
+      </section>
+<section>
+	<div class = "pictures"> 
+
+    <div class="containera">
+        <img src="pics/gabby.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/gabby.jpg);">
+            <div class = "text"> <span class="name"> Gabby Finear </span> <br> <i> Chair </i><br><br>  Newport Beach, CA
+            <br> Alpha Phi | Major: 6-14 </div>
+        </div>
+        <div class = "img_text"> Gabby Finear </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/nico.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/nico.jpg);">
+            <div class = "text"> <span class="name"> Nico Salinas </span> <br> <i> Vice Chair</i><br><br>  Pasadena, CA
+            <br> Beta Theta Pi | Major: 6-3 </div>
+        </div>
+        <div class = "img_text"> Nico Salinas </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/danny.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/danny.jpg);">
+            <div class = "text"> <span class="name"> Daniel Landez </span> <br> <i>Premiere Chair</i><br><br>  San Antonio, TX
+            <br> Conner 2, SAE | Major: 4 </div>
+        </div>
+        <div class = "img_text"> Daniel Landez </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/jo.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/jo.jpg);">
+            <div class = "text"> <span class="name"> Jo Pierre </span> <br> <br>  Lyon, France
+		    <br> Delta Tau Delta <br> Major: 2A </div>
+        </div>
+        <div class = "img_text"> Jo Pierre </div>
+    </div>
+</div><div class = "pictures"> 
+
+    <div class="containera">
+        <img src="pics/jordan.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/jordan.jpg);">
+            <div class = "text"> <span class="name"> Jordan Tappa </span> <br> <br>  Wauwatosa, WI
+		    <br> East Campus <br> Major: 2A-4 </div>
+        </div>
+        <div class = "img_text"> Jordan Tappa </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/jose.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/jose.jpg);">
+            <div class = "text"> <span class="name"> Jose Cruz Mendoza </span> <br> <i>Social Chair</i><br><br>  West Palm Beach, FL
+            <br> Next 4E | Major: 6-3, 24-2 </div>
+        </div>
+        <div class = "img_text"> Jose Cruz Mendoza </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/talia.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/talia.jpg);">
+            <div class = "text"> <span class="name"> Talia Blum </span> <br> <br>  Plainview, NY
+		    <br> New House 3 <br> Major: 18 </div>
+        </div>
+        <div class = "img_text"> Talia Blum </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/annie.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/annie.jpg);">
+            <div class = "text"> <span class="name"> Annie Yun </span> <br> <i>Web Chair</i><br><br>  Salt Lake City, UT
+            <br> Macgregor | Major: 6-3 </div>
+        </div>
+        <div class = "img_text"> Annie Yun </div>
+    </div>
+</div><div class = "pictures"> 
+
+    <div class="containera">
+        <img src="pics/emma.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/emma.jpg);">
+            <div class = "text"> <span class="name"> Emma Kelley </span> <br> <br>  Andover, MA
+		    <br> Alpha Phi <br> Major: 2A-4 </div>
+        </div>
+        <div class = "img_text"> Emma Kelley </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/audrey.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/audrey.jpg);">
+            <div class = "text"> <span class="name"> AudreyRose Wooden </span> <br> <i>Delivery Chair</i><br><br>  Seekonk, MA
+            <br> New House 2 | Major: 6-2, 24-2 </div>
+        </div>
+        <div class = "img_text"> AudreyRose Wooden </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/ben.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/ben.jpg);">
+            <div class = "text"> <span class="name"> Ben Nguyen </span> <br> <i>Treasurer</i><br><br>  Yorba Linda, CA
+            <br> Next House | Major: 10, 5 </div>
+        </div>
+        <div class = "img_text"> Ben Nguyen </div>
+    </div>
+
+    <div class="containera">
+        <img src="pics/andrea.jpg" width = "100%" />
+        <div class="overlay" style="background-image: url(pics/blurred/andrea.jpg);">
+            <div class = "text"> <span class="name"> Andrea Orji </span> <br> <br>  Pflugerville, TX
+		    <br> McCormick <br> Major: 10 ENG Biomedical </div>
+        </div>
+        <div class = "img_text"> Andrea Orji </div>
+    </div>
+</div>
+
+	    </section>
+      <!-- JUSTINS START -->
+        <v-toolbar class="primary secondary--text" height="300px" id="projects">
+          <v-spacer></v-spacer>
+          <v-toolbar-title center absolute>
+            <h3>PROJECTS</h3>
+
+          </v-toolbar-title>
+          <v-spacer></v-spacer>
+
+        </v-toolbar>
+<!-- JUSTINS END -->
+      <section>
+                
+
+         <v-card width = "100%">
+          <v-img
+            class="white--text"
+            height="100%"
+            src="23.jpg"
+          >
+          
+        <v-layout
+          column
+          wrap
+          class="my-5"
+          align-center
+          justify-center
+            fill-height
+            class="white--text"
+        >
+          
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">The Beginning</div>
+                    </v-card-title>
+                    
+                    <v-card-text>The Massachusetts Institute of Technology Brass Rat tradition was born in the spring of 1929. C. Brigham Allen, then President of the Class of 1929, called upon one member of the classes of 1930, 1931, and 1932 and entrusted them with the task of designing a ring that the Institute Committee would ultimately approve as the Standard Technology Ring. The committee agreed upon a three part construction, with a primary image on the bezel of the ring and two other images on the two shanks.</v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                     <v-card-text class="text-xs-center">
+                    <v-avatar
+                slot="activator"
+                size="36px"
+              >
+                <img
+                  class="white--text"
+                  src="favicon.png"
+                >
+              </v-avatar>
+            </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline">The Defense</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Controversy quickly arose over whether to honor the Beaver or the Great
+  Dome on the bezel; some members of the committee even questioned MIT's
+  choice of the beaver as its mascot. The committee looked to the original
+  discussion over the mascot (formally decided upon by President MacLaurin in
+  1914), calling upon the now famous defense of the beaver by Lester Gardner,
+  Class of 1897: 
+  <!-- <blockquote>
+  "The beaver not
+  only typifies the Tech (student), but his habits are peculiarly our own.
+  The beaver is noted for his engineering, mechanical skills, and industry.
+  His habits are nocturnal. He does his best work in the dark."  
+  </blockquote> -->
+  <div style="margin-left: 1em;">
+"The beaver not
+  only typifies the Tech (student), but his habits are peculiarly our own.
+  The beaver is noted for his engineering, mechanical skills, and industry.
+  His habits are nocturnal. He does his best work in the dark."  
+</div>
+  Citing the fact that many other schools had buildings similar to our
+  Great Dome, the committee ultimately decided to honor our hard-working
+  and industrious mascot on the ring and thus the Brass Rat was born. With
+  the debate settled and the ring finally designed, the Class of 1930 was
+  the first to proudly wear a Brass Rat.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">The Tradition</div>
+                    </v-card-title>
+                    <v-card-text>
+                      So started the Institute tradition of the Brass Rat, the affectionate nickname
+      for the ring that has become a symbol of MIT as well as one of the most
+      recognizable rings worldwide. Ever since, each class has appointed its own
+      Ring Committee, which endeavors to craft a ring that will inspire us while
+      we are here, unite us once we leave, and, above all else, unmistakably
+      symbolize the Massachusetts Institute of Technology.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </v-img>
+      </v-card>
+      </section>
+
+
+      <section>
+        <v-card>
+        <v-container
+          fluid
+          grid-list-lg
+        >
+          <v-layout row wrap align-center>
+        <v-flex xs12>
+              <v-card color="black" class="white--text " >
+                <v-layout row justify-center>
+
+
+<v-flex xs10 order-lg2>
+          <v-card dark tile flat color="error">
+            <v-img
+                      src="bezel20.jpg"
+                      height="100%"
+                      contain
+                    ></v-img>
+          </v-card>
+        </v-flex>
+        <v-flex xs8 >
+          <v-card dark tile flat color="#C69F52" height = 100% class = "black--text">
+            <v-card-title primary-title>
+                      <div>
+                        <div class="headline">The Bezel</div>
+                        
+                      </div>
+                    </v-card-title>
+            <v-card-text><div >The bezel of the 2020 Brass Rat features MIT’s iconic mascot, the beaver, at the heart of the MIT-Boston landscape. The beaver, sporting its very own Brass Rat, unifies itself with our class and simultaneously presents in his right hand a representation of our unified world. Instead of proffering the typical representation, the globe the beaver offers to the wearer exhibits Pangaea, symbolizing the diversity of our student body and the notion that although we are all from different places both domestic and international, we make up and stand for one world. The beaver sits upon a dam of branches where Pi is inscribed, a tribute to the memorable date when many of us were officially admitted to MIT.
+
+Falling off of the dam and into the river are 8 ivy leaves and a pinecone, symbolic of those who have fallen beneath the engineering prestige of MIT. The Massachusetts Avenue bridge displays the 153rd smoot mark to herald that we are the 153rd graduating class.</div></v-card-text>
+          </v-card>
+        </v-flex>
+                </v-layout>
+                <v-divider light></v-divider>
+
+          
+          </v-layout>
+        </v-container>
+      </v-card>
+
+      <v-card>
+        <v-container
+          fluid
+          grid-list-lg
+        >
+          <v-layout row wrap justify-space-around>
+        <v-flex xs12>
+              <v-card color="black" class="white--text " >
+                <v-layout row justify-center>
+
+
+<v-flex xs10 order-lg2>
+          <v-card dark tile flat color="error">
+            <v-img
+                      src="bezel20.jpg"
+                      height="100%"
+                      contain
+                    ></v-img>
+          </v-card>
+        </v-flex>
+        <v-flex xs8 >
+          <v-card dark tile flat color="#C69F52" height = 100% class = "black--text">
+            <v-card-title primary-title>
+                      <div>
+                        <div class="headline">The Bezel</div>
+                        
+                      </div>
+                    </v-card-title>
+            <v-card-text><div >The bezel of the 2020 Brass Rat features MIT’s iconic mascot, the beaver, at the heart of the MIT-Boston landscape. The beaver, sporting its very own Brass Rat, unifies itself with our class and simultaneously presents in his right hand a representation of our unified world. Instead of proffering the typical representation, the globe the beaver offers to the wearer exhibits Pangaea, symbolizing the diversity of our student body and the notion that although we are all from different places both domestic and international, we make up and stand for one world. The beaver sits upon a dam of branches where Pi is inscribed, a tribute to the memorable date when many of us were officially admitted to MIT.
+
+Falling off of the dam and into the river are 8 ivy leaves and a pinecone, symbolic of those who have fallen beneath the engineering prestige of MIT. The Massachusetts Avenue bridge displays the 153rd smoot mark to herald that we are the 153rd graduating class.</div></v-card-text>
+          </v-card>
+        </v-flex>
+                </v-layout>
+                <v-divider light></v-divider>
+
+          
+          </v-layout>
+        </v-container>
+      </v-card>
+
+      <v-card>
+        <v-container
+          fluid
+          grid-list-lg
+        >
+          <v-layout row wrap justify-space-around>
+        <v-flex xs12>
+              <v-card color="black" class="white--text " >
+                <v-layout row justify-center>
+
+
+<v-flex xs10 order-lg2>
+          <v-card dark tile flat color="error">
+            <v-img
+                      src="bezel20.jpg"
+                      height="100%"
+                      contain
+                    ></v-img>
+          </v-card>
+        </v-flex>
+        <v-flex xs8 >
+          <v-card dark tile flat color="#C69F52" height = 100% class = "black--text">
+            <v-card-title primary-title>
+                      <div>
+                        <div class="headline">The Bezel</div>
+                        
+                      </div>
+                    </v-card-title>
+            <v-card-text><div >The bezel of the 2020 Brass Rat features MIT’s iconic mascot, the beaver, at the heart of the MIT-Boston landscape. The beaver, sporting its very own Brass Rat, unifies itself with our class and simultaneously presents in his right hand a representation of our unified world. Instead of proffering the typical representation, the globe the beaver offers to the wearer exhibits Pangaea, symbolizing the diversity of our student body and the notion that although we are all from different places both domestic and international, we make up and stand for one world. The beaver sits upon a dam of branches where Pi is inscribed, a tribute to the memorable date when many of us were officially admitted to MIT.
+
+Falling off of the dam and into the river are 8 ivy leaves and a pinecone, symbolic of those who have fallen beneath the engineering prestige of MIT. The Massachusetts Avenue bridge displays the 153rd smoot mark to herald that we are the 153rd graduating class.</div></v-card-text>
+          </v-card>
+        </v-flex>
+                </v-layout>
+                <v-divider light></v-divider>
+
+          
+          </v-layout>
+        </v-container>
+      </v-card>
+
+      </section>
+
+
+      <section>
+
+         <v-card width = "100%">
+          
+          <v-img
+            class="white--text"
+            height="100%"
+            src="23.jpg"
+          >
+          <v-title> <v-flex text-lg-center ><div class = "headline white--text"> FREQUENTLY ASKED QUESTIONS</div></v-flex>
+          </v-title>
+        <v-layout
+          column
+          wrap
+          class="my-5"
+          align-center
+          justify-center
+            fill-height
+            class="white--text"
+        >
+          
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-start>
+
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">                
+                    <v-card-text><div class = "title white--text">What is Ringcomm?</div>
+                      <br><div class = "subheading white--text"> RingComm is a committee of 12 students who design their respective class' MIT Brass Rat and organize the ring-related events, such as Ring Premiere and Ring Delivery.  </div>
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                     
+                    
+                    <v-card-text>
+                      <div class = "title white--text">How many people purchase a gold ring?</div>
+                      <br><div class = "subheading white--text"> Historically, around 80% of students in a given class have bought a Gold Ring.  </div>
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    
+                    
+                    <v-card-text>
+                      <div class = "title white--text">Who manufactures the brass rat?</div>
+                      <br><div class = "subheading white--text"> The class of 2021 Brass Rat will be manufactured by Herff Jones at their site in Rhode Island.  </div>
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+
+              <v-layout row wrap align-start>
+
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">                
+                    <v-card-text><div class = "title white--text">When and Where is Ring Delivery?</div>
+                      <br><div class = "subheading white--text"> It's a secret  </div>
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                     
+                    
+                    <v-card-text>
+                      <div class = "title white--text">How can I get financial aid?</div>
+                      <br><div class = "subheading white--text"> something coalition  </div>
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    
+                    
+                    <v-card-text>
+                      <div class = "title white--text">You didn't answer my question.</div>
+                      <br><div class = "subheading white--text"> Contact us by email at brassrat2021@mit.edu  </div>
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+
+
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </v-img>
+      </v-card>
+      </section>
+
+
+
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-5">
+            <v-flex xs12 sm4>
+              <v-card class="elevation-0 transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline">For Ring Resizing, Repairs and Replacements</div>
+                </v-card-title>
+                <v-list-tile>
+                    <v-list-tile-action>
+                      <v-icon >far fa-envelope</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>jeff @ herff jones or whatever</v-list-tile-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card class="elevation-0 transparent">
+                <v-card-title primary-title class="layout justify-left">
+                  <div class="headline">To contact us</div>
+                </v-card-title>
+                <v-card-text>We're happy to take questions, comments and concerns by email at ringcomm2021@mit.edu. Find us on social media below:
+                </v-card-text>
+                <v-list class="transparent justify-center">
+                  <v-btn outline flat color="teal" href = "https://www.facebook.com/BrassRat2021/">
+                <v-icon>fab fa-facebook-f</v-icon>
+              </v-btn>
+              <v-btn outline flat  color="teal" href = "https://www.instagram.com/brass_rat_2021/">
+                <v-icon>fab fa-instagram</v-icon>
+              </v-btn>
+                  
+                </v-list>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+      <v-footer class="blue darken-2">
+        <v-layout row wrap align-center>
+          <v-flex xs12>
+            <div class="white--text ml-3">
+              
+            </div>
+          </v-flex>
+        </v-layout>
+      </v-footer>
+    </v-content>
+  </v-app>
+ </div>
+ <script src="https://unpkg.com/vue/dist/vue.js"></script>
+ <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+ <script>
+   new Vue({
+    el: '#app',
+    data () {
+      return {
+        title: 'Your Logo'
+      }
+    }
+  })
+ </script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+/* HAMBORGOR */
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+	
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Add a hover effect if you want */
+/*.fa:hover {
+    opacity: 0.7;
+}*/
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+#borgor{
+position: absolute;
+font-size: 50px;
+top: 20px;
+left: 5%;
+color: #FFF;
+}
+
+#borgor:hover{
+    opacity:0.9;
+}
+
+.main-menu {
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: visible;
+  transition: left 0.3s ease,
+              box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-weight: 700;
+  font-size: 1em;
+  color: #333333;
+  text-decoration: none;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  text-decoration: none;
+  color: #727272;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*
+ On small devices, allow it to toggle...
+*/
+/*
+ :target for non-JavaScript
+ aria-expanded="true/false" will be for JavaScript
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;  
+  content: "";
+  left: 0;
+
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+
+/* Main CSS */
+
+
+.center {
+    display: inline-block;
+    width: 25%;
+    margin: auto;
+    vertical-align: middle;
+}
+#title img {
+    margin-left: 10px;
+    float:right; 
+    margin-bottom: 10px;
+}
+
+html, body{
+    font-family: 'Helvetica Neue';
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.entrance{
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-image: url("background.jpg");
+    opacity: 20%;
+    text-align:center;
+    display: inline-block;
+}
+
+.entrance a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.pictures{
+    display: flex;
+    margin-bottom: -5px;
+    overflow: hidden;
+}
+
+.pictures > div {
+    flex:1;
+}
+.foverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  background-size: cover;
+
+  box-sizing: border-box;
+}
+
+.text {
+  color: white;
+  font-size: 1.25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  background: rgba(0,0,0,.7);
+  margin: 10%;
+    padding: 7%;
+}
+
+.img_text{
+    position: absolute;
+    top: 75%;
+    right: 0;
+    font-family: "Helvetica Neue";
+    opacity: 0.8;
+    padding-right: 10%;
+    padding-left: 5%;
+    background-color: #000000;
+    text-align: right;
+    color: white;
+    font-size: 1.5w; 
+}
+
+.containera {
+  position: relative;
+  width: 25%;
+  float: left;
+  font-weight: 900;
+}
+
+.containera .name {
+    font-weight: 900;
+}
+
+.containerb {
+    position: relative;
+    width: 25%;
+    float: right;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+    box-sizing: border-box;
+  transition: .5s ease;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 300;
+}
+
+.g_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  margin: 0;
+  right: 0;
+  height: 100%;
+  opacity: 100%;
+    box-sizing: border-box;
+  background-color: #626567;
+}
+
+#g_text {
+  color: white;
+  font-size: 3vw;
+  position: absolute;
+  top: 5%;
+  right: 0px;
+  text-align: center;
+  padding: 1% 3%;
+  background-color: #455A64;
+  font-weight: 600;
+  opacity: 0.8;
+  font-family: "Helvetica Neue"
+}
+
+#beginning, #defense, #tradition {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.siema p, .siema blockquote {
+    font-size: 15pt;
+    line-height: 18pt;
+}
+
+.containera:hover .overlay {
+  opacity: 1;
+}
+
+.containera:hover .img_text{
+    opacity: 0;    
+}
+.historytxt{
+    color: white;
+    position: relative;
+    left: 2%;
+    right: -2%;
+    top: 10%;
+    font-family: "Helvetica Neue";
+    letter-spacing: 1px;
+}
+.text {
+  color: white;
+  font-size: 1.25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  background: rgba(0,0,0,.7);
+  margin: 8%;
+    padding: 5%;
+}
+
+.siema p{
+    padding: 0%;
+}
+
+#title, #history {
+    overflow: hidden;
+    position: relative;
+}
+
+#history {
+  background-color: #455A64;
+  padding: 100px;
+  border-top: 2px solid #FFC107;
+}
+
+#history h3 {
+    font-family: 'Helvetica Neue';
+    font-weight: 900;
+}
+
+#feedback {
+    background-color: #455A64;
+    padding: 3% 20%;
+    color: white;
+}
+
+#feedback a{
+    text-decoration: underline;
+    color: white;
+}
+
+#feedback a:hover{
+    color: #AAA;
+}
+
+#feedback hr{
+    margin-bottom: 50px;
+}
+
+.next{
+    float:right;
+}
+
+.prev, .next{
+    font-size: 40px;
+}
+
+blockquote {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    margin-left: 2% !important;
+    padding: 0px 5%;
+    border-left: 10px solid white;
+}
